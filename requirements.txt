@@ -1,0 +1,13 @@
+# Instalação padrão (Linux/macOS, requer CMake + compilador C++ para o dlib):
+#   pip install -r requirements.txt
+#
+# Windows (recomendado — usa o dlib pré-compilado, sem precisar de CMake):
+#   pip install dlib-bin
+#   pip install "setuptools<81" click pillow numpy opencv-python face-recognition-models
+#   pip install --no-deps face-recognition
+
+face_recognition>=1.3.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+# face_recognition_models usa pkg_resources, removido do setuptools >= 81
+setuptools<81
